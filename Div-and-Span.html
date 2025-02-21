@@ -5,12 +5,45 @@
         <title>Div and Span Elements</title>
     </head>
     <body>
-        <div>*** DIV 1: some content here ***</div><div>*** DIV 2: following right after DIV 1 ***<span>SPAN 1: Follwoing right after DIV 2 ***</span></div>
-        <div>*** DIV 3: Follwoing right after DIV 2 ***<span>*** SPAN 2: Inside DIV 3 ***</span> Continue content of DIV 3 </div> <!--If we plave the following code <div>*** DIV 4: Inside SPAN 2 ***</div> SPAN 2, we get an error: Contexts in which element div may be used:
+        <nav>This link must take you to the bottom of the page</nav><!--usually contains links that take us to different parts of the website-->
+        <section>
+<h1>The Main HEADING</h1>
+            <div>*** DIV 1: some content here ***</div><div>*** DIV 2: following right after DIV 1 ***<span>SPAN 1: Follwoing right after DIV 2 ***</span></div>
+            <div>*** DIV 3: Follwoing right after DIV 2 ***<span>*** SPAN 2: Inside DIV 3 ***</span> Continue content of DIV 3 </div> <!--If we plave the following code <div>*** DIV 4: Inside SPAN 2 ***</div> SPAN 2, we get an error: Contexts in which element div may be used:
         Where flow content is expected.
         As a child of a dl element.
         Content model for element span:
-        Phrasing content.-->>
+        Phrasing content.-->
+        </section>
+        
+        
+        <section>
+<h2>Unordered Lists</h2>
+            <div>My Typical dinner shopping list:
+                <ul><!--This tag indicates that the following is an unordered list. You may not enter any text between the ul tags unless it is enclosed within the <li> tag-->
+                    
+                <li>Milk</li> <!--This tag indicates that the following is an list item-->
+                <li>Donuts</li>
+                <li>Cookies<ol>
+                    <li>Chocolate</li>
+                    <li>Sugar</li>
+                    <li>Peanut Butter</li>
+                </ol></li>
+                <li>Pepto Bismol</li>
+                </ul>
+                
+            </div>
+            <div>Article 1</div>
+            <div>Article 2</div>
+            <div>Article 3</div>
+        </section>
+        
+        <section>
+<h3>Smaller Sub Heading</h3>
+            <div>Article 4</div>
+            <div>Article 5</div>
+            <div>Article 6</div>
+        </section>
     </body>
 
 </html>
