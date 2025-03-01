@@ -3,10 +3,20 @@
     <head>
         <meta charset="utf-8">
         <title>Div and Span Elements</title>
+        <style>
+            h1{color:blue;}
+            #section1{color:red;
+                font: 75% georgia, sans-serif;
+                background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
+                text-align: center;}
+            #section3>p{color: goldenrod;
+            font-size: 20pt;}
+
+        </style>
     </head>
     <body>
         <nav>This link must take you to the bottom of the page</nav><!--usually contains links that take us to different parts of the website-->
-        <section>
+        <section id="section0">
 <h1>The Main HEADING</h1>
             <div>*** DIV 1: some content here ***</div><div>*** DIV 2: following right after DIV 1 ***<span>SPAN 1: Follwoing right after DIV 2 ***</span></div>
             <div>*** DIV 3: Follwoing right after DIV 2 ***<span>*** SPAN 2: Inside DIV 3 ***</span> Continue content of DIV 3 </div> <!--If we plave the following code <div>*** DIV 4: Inside SPAN 2 ***</div> SPAN 2, we get an error: Contexts in which element div may be used:
@@ -17,6 +27,8 @@
             <div>Links to the below sections</div>
             <ul>
                 <li><a href="#section1">#section1</a></li>
+                <li><a href="#section2">#section2</a></li>
+                <li><a href="#section3">#section3</a></li>
             </ul>
     
     </section>
@@ -42,30 +54,31 @@
         </section>
 
 
-<section>
-    <h3>Internal/External Links</h3>
+<section id="section2">
+    <h3>(#section2) Internal/External Links</h3>
     Linking to a file in the same directory:
         <a href="index.html" title="Same Directory File Link">This link will take you to index.html file present in the same directory</a>
     
     <a href="index.html" title="Same Directory File Link"><div>DIV linking same directory file</div></a>
     <div> Linking to an external site:</div>
     <a href="https://www.linkedin.com/in/harsh-c-206a672a8/" target="_blank" title="LinkedIn Profile"><div>This will take you to my linkedIn profile</div></a> <!--The target attribute creates a new webpage to open the automatically instead of going to the link in the same webpage-->
+    <div> Linking back to top of the page</div>
+    <a href="#section0">Back to Top</a>
 </section>
 
-        <section>
-<h4>Theodore Roosevelt</h4>
-            <div>Article 4 <!--Use &quot to insert a "" into the paragraph text to prevent rendering issues-->
+<section id="section3">
+<h4>(#section3) Theodore Roosevelt</h4>
+            <div>Article 4</div> <!--Use &quot to insert a "" into the paragraph text to prevent rendering issues-->
                 <p><img src="roosevelt_360x450.jpg" width="360" height="450" alt="Image with Quote"> <!--The img tag is meant to store links to images-->
                     &quot; It is not the critic who counts: not the man who points out how the strong man stumbles or where the doer of deeds could have done better. 
                     The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood, who strives valiantly, 
                     who errs and comes up short again and again, because there is no effort without error or shortcoming, but who knows the great enthusiasms, 
                     the great devotions, who spends himself for a worthy cause; who, at the best, knows, in the end, the triumph of high achievement, and who, 
                     at the worst, if he fails, at least he fails while daring greatly, so that his place shall never be with those cold and timid souls who knew neither victory nor defeat.&quot;
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0WmyA8FuDgk6GMtGUgVnoWzgcvPWEoc0TsQ&s" width="640" height="480" alt="E-Girl Artwork"></p>
-            </div>
+                </p>
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0WmyA8FuDgk6GMtGUgVnoWzgcvPWEoc0TsQ&s" width="640" height="480" alt="E-Girl Artwork"></div>
             <div>Article 5</div>
             <div>Article 6</div>
-        </section>
-    </body>
-
+</section>
+</body>
 </html>
