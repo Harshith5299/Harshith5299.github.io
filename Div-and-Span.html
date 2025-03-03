@@ -3,21 +3,43 @@
     <head>
         <meta charset="utf-8">
         <title>Div and Span Elements</title>
+        <link rel="stylesheet" href="style2.css"> <!--It seems like the link tag doesn't need a closing tag here. It allows the author to link their document to other sources-->
         <style>
             h1{color:blue;}
+            
+            #section0 li:nth-child(2) {font-size: 24px;}
+            #section0 li:nth-child(3):hover {background-color:red;
+            cursor: pointer;}
+
             #section1{color:red;
                 font: 75% georgia, sans-serif;
                 background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
                 text-align: center;}
+            
+            #section2 ul{list-style: none;}
+            
+            a:link, a:visited {text-decoration: none;
+            background-color: green;
+            border: 1px solid blue;
+            color: black;
+            display: block;
+            width: 200px;
+            text-align: center;
+            margin-bottom: 1px;}
+            
+            a:hover, a:active {background-color:red;
+                color: purple;}
+
             #section3>p{color: goldenrod;
             font-size: 20pt;}
+            
 
         </style>
     </head>
     <body>
         <nav>This link must take you to the bottom of the page</nav><!--usually contains links that take us to different parts of the website-->
         <section id="section0">
-<h1>The Main HEADING</h1>
+            <h1>The Main HEADING</h1>
             <div>*** DIV 1: some content here ***</div><div>*** DIV 2: following right after DIV 1 ***<span>SPAN 1: Follwoing right after DIV 2 ***</span></div>
             <div>*** DIV 3: Follwoing right after DIV 2 ***<span>*** SPAN 2: Inside DIV 3 ***</span> Continue content of DIV 3 </div> <!--If we plave the following code <div>*** DIV 4: Inside SPAN 2 ***</div> SPAN 2, we get an error: Contexts in which element div may be used:
         Where flow content is expected.
@@ -56,14 +78,15 @@
 
 <section id="section2">
     <h3>(#section2) Internal/External Links</h3>
-    Linking to a file in the same directory:
-        <a href="index.html" title="Same Directory File Link">This link will take you to index.html file present in the same directory</a>
+    <ul>Linking to a file in the same directory: 
+        <li><a href="index.html" title="Same Directory File Link">This link will take you to index.html file present in the same directory</a></li>
     
-    <a href="index.html" title="Same Directory File Link"><div>DIV linking same directory file</div></a>
-    <div> Linking to an external site:</div>
-    <a href="https://www.linkedin.com/in/harsh-c-206a672a8/" target="_blank" title="LinkedIn Profile"><div>This will take you to my linkedIn profile</div></a> <!--The target attribute creates a new webpage to open the automatically instead of going to the link in the same webpage-->
-    <div> Linking back to top of the page</div>
-    <a href="#section0">Back to Top</a>
+    <li><a href="index.html" title="Same Directory File Link"><div>DIV linking same directory file</div></a></li>
+    <li><div> Linking to an external site:</div></li>
+    <li><a href="https://www.linkedin.com/in/harsh-c-206a672a8/" target="_blank" title="LinkedIn Profile"><div>This will take you to my linkedIn profile</div></a></li> <!--The target attribute creates a new webpage to open the automatically instead of going to the link in the same webpage-->
+    <li><div> Linking back to top of the page</div></li>
+    <li><a href="#section0">Back to Top</a></li>
+    </ul>
 </section>
 
 <section id="section3">
